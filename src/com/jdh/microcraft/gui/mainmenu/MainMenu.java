@@ -10,7 +10,7 @@ import com.jdh.microcraft.sound.Sound;
 import com.jdh.microcraft.util.ControlHandler;
 
 public class MainMenu extends Menu {
-    private static final Sprite LOGO = new Sprite("/logo.png");
+    private static final Sprite LOGO = new Sprite("/res/logo.png");
     private static final int LOGO_Y = 32;
 
     private static final String[] OPTIONS = {

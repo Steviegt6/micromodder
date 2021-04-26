@@ -166,7 +166,7 @@ public class Window {
                 Window.tps = Window.ticks;
                 Window.frames = 0;
                 Window.ticks = 0;
-                System.out.println(Window.fps + " | " + Window.tps);
+                //System.out.println(Window.fps + " | " + Window.tps);
             }
 
             Window.frameTime = now - Window.lastFrame;

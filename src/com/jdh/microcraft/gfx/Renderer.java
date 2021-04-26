@@ -19,7 +19,7 @@ public class Renderer {
     public static int[] pixels = new int[WIDTH * HEIGHT];
 
     // global spritesheet
-    public static Spritesheet spritesheet = new Spritesheet("/tiles.png", 8);
+    public static Spritesheet spritesheet = new Spritesheet("/res/tiles.png", 8);
 
     // stored camera stack
     private static Stack<Camera> cameraStack = new Stack<>();
