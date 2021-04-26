@@ -3,10 +3,7 @@ package com.jdh.microcraft;
 import com.jdh.microcraft.gui.ColorSelectMenu;
 import com.jdh.microcraft.gui.DifficultySelectMenu;
 import com.jdh.microcraft.gui.Menu;
-import com.jdh.microcraft.gui.mainmenu.AboutMenu;
-import com.jdh.microcraft.gui.mainmenu.HowToPlayMenu;
-import com.jdh.microcraft.gui.mainmenu.LoadingMenu;
-import com.jdh.microcraft.gui.mainmenu.MainMenu;
+import com.jdh.microcraft.gui.mainmenu.*;
 
 public class MainMenuState implements State {
     public Menu menu;
@@ -14,6 +11,7 @@ public class MainMenuState implements State {
     public MainMenu mainMenu;
     public LoadingMenu loadingMenu;
     public HowToPlayMenu howToPlayMenu;
+    public OptionsMenu optionsMenu;
     public AboutMenu aboutMenu;
     public ColorSelectMenu colorSelectMenu;
     public DifficultySelectMenu difficultySelectMenu;
@@ -22,6 +20,7 @@ public class MainMenuState implements State {
         this.mainMenu = new MainMenu();
         this.loadingMenu = new LoadingMenu();
         this.howToPlayMenu = new HowToPlayMenu();
+        this.optionsMenu = new OptionsMenu();
         this.aboutMenu = new AboutMenu();
         this.colorSelectMenu = new ColorSelectMenu();
         this.difficultySelectMenu = new DifficultySelectMenu();

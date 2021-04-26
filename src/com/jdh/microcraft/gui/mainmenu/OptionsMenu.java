@@ -9,36 +9,22 @@ import com.jdh.microcraft.gui.Menu;
 import com.jdh.microcraft.sound.Sound;
 import com.jdh.microcraft.util.ControlHandler;
 
-public class MainMenu extends Menu {
+public class OptionsMenu extends Menu {
     private static final Sprite LOGO = new Sprite("/res/logo.png");
     private static final int LOGO_Y = 32;
 
     private static final String[] OPTIONS = {
-            "START",
-            "HOW TO PLAY",
-            "OPTIONS",
-            "ABOUT",
-            "QUIT"
+            "Option 1 Test",
+            "Option 2 Test",
+            "Option 3 Test",
+            "RETURN"
     };
 
     private static final Runnable[] FUNCTIONS = {
-            () -> {
-                Sound.CRAFT.play();
-                Global.mainMenu.menu = Global.mainMenu.colorSelectMenu;
-                },
-            () -> {
-                Sound.CRAFT.play();
-                Global.mainMenu.menu = Global.mainMenu.howToPlayMenu;
-                },
-            () -> {
-                Sound.CRAFT.play();
-                Global.mainMenu.menu = Global.mainMenu.optionsMenu;
-                },
-            () -> {
-                Sound.CRAFT.play();
-                Global.mainMenu.menu = Global.mainMenu.aboutMenu;
-                },
-            () -> System.exit(0)
+            () -> Sound.CRAFT.play(),
+            () -> Sound.CRAFT.play(),
+            () -> Sound.CRAFT.play(),
+            () -> Global.mainMenu.menu = Global.mainMenu.mainMenu
     };
 
     private int index;
@@ -71,18 +57,6 @@ public class MainMenu extends Menu {
                 color
             );
         }
-
-        Font.render(Font.Colors.DARK_GREY + "microMODDER BY",          0, 0,  555);
-        Font.render(Font.Colors.RED       + "CONVICTED TOMATOPHILE",   0, 8,  555);
-        Font.render(Font.Colors.DARK_GREY + "(github.com/Steviegt6)", -2, 16, 555); // -2 x offset to fix '(' width funnies
-        Font.render(
-            Font.Colors.DARK_GREY + "ORIGINALLY BY" + Font.Colors.GREY + " NOTCH",
-            0, Renderer.HEIGHT - 16, 555
-        );
-        Font.render(
-            Font.Colors.DARK_GREY + "REMAKE BY" + Font.Colors.BLUE + " JDH" +
-                Font.Colors.DARK_GREY + " (github.com/jdah)",
-            0, Renderer.HEIGHT - 8, 555);
     }
 
     @Override
