@@ -44,4 +44,5 @@ if [ "$do_build" =  true ] ; then
   $JAVA_HOME/bin/javac -sourcepath src src/com/jdh/microcraft/Main.java -d out/production/Microcraft
   cp -r res/ out/production/Microcraft/
   $JAVA_HOME/bin/jar -cmvf src/META-INF/MANIFEST.MF out/artifacts/Microcraft/Microcraft.jar -C out/production/Microcraft/ .
+  Launch4J/launch4jc.exe Launch4JConfig.xml
 fi
