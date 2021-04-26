@@ -67,6 +67,9 @@ public class MainMenu extends Menu {
             );
         }
 
+        Font.render(Font.Colors.DARK_GREY + "microMODDER BY",          0, 0,  555);
+        Font.render(Font.Colors.RED       + "CONVICTED TOMATOPHILE",   0, 8,  555);
+        Font.render(Font.Colors.DARK_GREY + "(github.com/Steviegt6)", -2, 16, 555); // -2 x offset to fix '(' width funnies
         Font.render(
             Font.Colors.DARK_GREY + "ORIGINALLY BY" + Font.Colors.GREY + " NOTCH",
             0, Renderer.HEIGHT - 16, 555

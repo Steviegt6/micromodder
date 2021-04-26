@@ -44,7 +44,7 @@ public class Main implements Runnable {
         }
 
         Dimension screen = Toolkit.getDefaultToolkit().getScreenSize();
-        Window.init("MICROCRAFT", screen.width / 2, screen.height / 2);
+        Window.init("microMODDER", screen.width / 2, screen.height / 2);
         new Thread(new Main()).start();
     }
 
