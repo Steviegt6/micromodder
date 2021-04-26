@@ -41,10 +41,7 @@ fi
 
 if [ "$do_build" =  true ] ; then
   mkdir -p out/production/Microcraft
-  mkdir -p out/artifacts/Microcraft_jar
   $JAVA_HOME/bin/javac -sourcepath src src/com/jdh/microcraft/Main.java -d out/production/Microcraft
   cp -r res/ out/production/Microcraft/
-  $JAVA_HOME/bin/jar -cmvf src/META-INF/MANIFEST.MF out/artifacts/Microcraft_jar/Microcraft.jar -C out/production/Microcraft/ .
-  $JAVA_HOME/bin/jpackage --name MICROCRAFT --input out/artifacts/Microcraft_jar/\
-    --main-jar Microcraft.jar --main-class com.jdh.microcraft.Main --resource-dir res --icon res/icon.icns
+  $JAVA_HOME/bin/jar -cmvf src/META-INF/MANIFEST.MF out/artifacts/Microcraft/Microcraft.jar -C out/production/Microcraft/ .
 fi
