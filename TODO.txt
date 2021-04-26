@@ -5,6 +5,8 @@ microMODDER:
  [ ] Actually add content lmfao.
  [ ] Bug fixes.
  [ ] Configurable stuffs.
+ [ ] World saving and world select screen.
+ [ ] Player item dropping and respawning.
 
 MICROCRAFTER (outdated):
  [X] Rock tools
