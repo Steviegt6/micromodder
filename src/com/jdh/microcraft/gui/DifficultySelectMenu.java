@@ -17,19 +17,21 @@ public class DifficultySelectMenu extends TextButtonMenu {
     };
 
     private static final String[] DIFFICULTY_NAMES = {
-        "TOO EASY",
-        "EASY",
-        "NORMAL",
-        "KINDA HARD",
-        "HARD"
+            "IM TOO YOUNG TO MINE",
+            "TOO EASY",
+            "EASY",
+            "NORMAL",
+            "KINDA HARD",
+            "HARD"
     };
 
     private static final double[] DIFFICULTY_VALUES = {
-        0.70,
-        0.85,
-        1.0,
-        1.15,
-        1.30
+            0.50,
+            0.70,
+            0.85,
+            1.0,
+            1.15,
+            1.30
     };
 
     public double getSelectedDifficulty() {
@@ -44,6 +46,7 @@ public class DifficultySelectMenu extends TextButtonMenu {
     @Override
     public Runnable[] getFunctions() {
         return new Runnable[] {
+                () -> { },
                 () -> { },
                 () -> { },
                 () -> { },

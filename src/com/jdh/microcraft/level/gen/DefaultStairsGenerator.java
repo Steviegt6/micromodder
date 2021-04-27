@@ -10,10 +10,10 @@ import java.util.Random;
 
 public class DefaultStairsGenerator extends StairsGenerator {
     // maximum number of tries before giving up
-    private static final int MAX_TRIES = 4096;
+    private static final int MAX_TRIES = 4096 * 2;
 
     // generator constraints
-    public static final int REQUIRE_ROCKS = 1 << 0;
+    public static final int REQUIRE_ROCKS = 1;
     public static final int REQUIRE_OPEN = 1 << 1;
     public static final int REQUIRE_NO_LIQUID = 1 << 2;
 
