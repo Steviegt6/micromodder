@@ -66,12 +66,20 @@ public class OptionsMenu extends Menu {
     public void tick() {
         super.tick();
 
-        if (ControlHandler.MENU_UP.pressedTick() && this.index > 0) {
-            this.index--;
+        if (ControlHandler.MENU_UP.pressedTick()) {
+            Sound.CRAFT.play();
+
+            if (this.index > 0) {
+                this.index--;
+            }
         }
 
-        if (ControlHandler.MENU_DOWN.pressedTick() && this.index < (OPTIONS.length - 1)) {
-            this.index++;
+        if (ControlHandler.MENU_DOWN.pressedTick()) {
+            Sound.CRAFT.play();
+
+            if (this.index < (OPTIONS.length - 1)) {
+                this.index++;
+            }
         }
 
         if (ControlHandler.MENU_SELECT.pressedTick()) {
