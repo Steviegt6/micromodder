@@ -136,6 +136,17 @@ public class Window {
 
         int rw = (int) (Renderer.WIDTH * scaleFactor), rh = (int) (Renderer.HEIGHT * scaleFactor);
 
+        for (int x = 0; x < image.getWidth(); x++) {
+            for (int y = 0; y < image.getHeight(); y++) {
+                Color trueColor = new Color(image.getRGB(x, y));
+
+                if (y % 2 != 0)
+                    trueColor = new Color(trueColor.getRed() + 10, trueColor.getGreen() + 10, trueColor.getBlue() + 10);
+
+                image.setRGB(x, y, trueColor.getRGB());
+            }
+        }
+
         graphics.setColor(Color.BLACK);
         graphics.fillRect(0, 0, Window.width, Window.height);
         graphics.drawImage(
