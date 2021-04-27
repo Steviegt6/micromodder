@@ -21,10 +21,13 @@ public class OptionsMenu extends Menu {
     };
 
     private static final Runnable[] FUNCTIONS = {
-            () -> Sound.CRAFT.play(),
-            () -> Sound.CRAFT.play(),
-            () -> Sound.CRAFT.play(),
-            () -> Global.mainMenu.menu = Global.mainMenu.mainMenu
+            Sound.CRAFT::play,
+            Sound.CRAFT::play,
+            Sound.CRAFT::play,
+            () -> {
+                Sound.CRAFT.play();
+                Global.mainMenu.menu = Global.mainMenu.mainMenu;
+            }
     };
 
     private int index;

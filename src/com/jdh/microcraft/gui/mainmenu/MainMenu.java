@@ -38,7 +38,10 @@ public class MainMenu extends Menu {
                 Sound.CRAFT.play();
                 Global.mainMenu.menu = Global.mainMenu.aboutMenu;
                 },
-            () -> System.exit(0)
+            () -> {
+                Sound.CRAFT.play();
+                System.exit(0);
+            }
     };
 
     private int index;
