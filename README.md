@@ -1,7 +1,10 @@
-# MICROCRAFT
+# microMODDER
+Small project for fun that aims to build upon MICROCRAFT and what it left us. The text below has been edited, so be sure to read it even if you're familiar with the original repository:
+
+### MICROCRAFT
 A Minicraft remake with some neat extras. Beat the fearsome **AIR WIZARD** to win the game!
 
-![screenshot](screen.png)
+<!-- TODO: update screenshot - ![screenshot](screen.png)-->
 
 Some of the neat extras:
 - Mithril (new material)
@@ -14,13 +17,14 @@ Some of the neat extras:
 - and much more...
 
 ## Running
-See [Releases](https://github.com/jdah/microcraft/releases)
+See the [GitHub releases](https://github.com/jdah/microcraft/releases) page for pre-build versions.
+Please note that this program requires Java JRE 16.
 
-See below to build and run for yourself or try to run it out of any decent Java IDE.
-
-*Please note* that in order to run the .jar file directly you will need at least the Java 14 runtime installed. 
+See below to build yourself and packaging for relases.
+Any reasonable Java IDE can build the `.jar` file for this project and launch it through there.
 
 ## Building
-- Mac: `$ ./package.sh` creates `Microcraft-1.0.dmg` which contains the application MICROCRAFT.app.
-- Windows: `package.bat` creates `MICROCRAFT-1.0.exe` file which installs MICROCRAFT.exe to `C:\Program Files\MICROCRAFT`.
-- With any OS and a valid JDK 14+ install, both `package.{sh, bat}` create `out\artifacts\Microcraft_jar\Microcraft.jar` which can be run on its own with `java -jar out\artifacts\Microcraft_jar\Microcraft.jar`
+
+- Mac: `$ ./package.sh` creates `Microcraft.exe`, which contains the application.
+- Windows: `package.bat` creates `Microcraft.exe`, which contains the application.
+- With any OS and a valid JDK 16+ install, both `package.{sh, bat}` create `out\artifacts\Microcraft\Microcraft.jar`. Both the `.jar` and executable can be run on their own.
