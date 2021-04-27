@@ -10,7 +10,7 @@ import com.jdh.microcraft.sound.Sound;
 import com.jdh.microcraft.util.ControlHandler;
 
 public class TextButtonMenu extends Menu {
-    private int optionIndex;
+    protected int optionIndex;
 
     public Boolean renderLogo() {
         return true;
@@ -30,6 +30,14 @@ public class TextButtonMenu extends Menu {
 
     public int getLogoOffsetY() {
         return 32;
+    }
+
+    public int getOptionsOffsetX() {
+        return 0;
+    }
+
+    public int getOptionsOffsetY() {
+        return 0;
     }
 
     public String[] getOptions() {
@@ -75,8 +83,8 @@ public class TextButtonMenu extends Menu {
 
                 Font.render(
                         optionText,
-                        (Renderer.WIDTH - Font.width(optionText)) / 2,
-                        drawOptionsY + (i * 8),
+                        ((Renderer.WIDTH - Font.width(optionText)) / 2) + getOptionsOffsetX(),
+                        drawOptionsY + getOptionsOffsetY() + (i * 8),
                         drawColor
                 );
             }
